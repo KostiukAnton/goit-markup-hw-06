@@ -760,7 +760,6 @@ FOOTER STYLES
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #fff;
-    margin-bottom: 16px;
 }
 
 .footer-form {
@@ -878,6 +877,9 @@ FOOTER STYLES
     gap: 24px;
     flex-wrap: nowrap;
     padding-right: 0;
+}
+.foter-imput-wraper {
+    padding-right: 0px;
 }
 }
 /* ========================================================================================================================================================
@@ -1067,6 +1069,7 @@ MODAL
     fill: transparent;
     cursor: pointer;
     margin-right: 8px;
+    flex-shrink: 0;
 }
 
 .checkbox-terms:checked+.checkbox-title .checkbox-click {
@@ -1211,8 +1214,10 @@ MODAL-MENU
     display: flex;
     flex-direction: column;
     gap: 24px;
+
 }
 .menu-address-link {
+    font-style: normal;
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
@@ -1225,6 +1230,11 @@ MODAL-MENU
 .container-nav-menu .social-links-list {
     gap: 40px;
     margin-top: 48px;
+}
+@media screen and (min-width: 768px) {
+.modal-menu {
+    display: none;
+}
 }
 /* ========================================================================================================================================================
 /MODAL-MENU
